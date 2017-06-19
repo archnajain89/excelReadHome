@@ -3,6 +3,9 @@ import org.openqa.selenium.By;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
+import com.relevantcodes.extentreports.ExtentTest;
+import com.relevantcodes.extentreports.LogStatus;
+
 import Utility.ExcelUtility;
 import base.CreateDriver;
 
@@ -28,6 +31,9 @@ public class LoginPage extends CreateDriver
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("//input[@id='password']")).clear();
 		Thread.sleep(2000);
+		ExtentTest t1=r.startTest("Dataprovider");
+		t1.log(LogStatus.PASS, "TEST CASE PASSED");
+		r.endTest(t1);
 	}
 	
 	@DataProvider(name="DP1")

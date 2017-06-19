@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="42076" started-at="2017-06-19T17:40:37Z" finished-at="2017-06-19T17:41:19Z">
+  <suite name="Default suite" duration-ms="43593" started-at="2017-06-19T20:11:21Z" finished-at="2017-06-19T20:12:05Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="42076" started-at="2017-06-19T17:40:37Z" finished-at="2017-06-19T17:41:19Z">
+    <test name="Default test" duration-ms="43593" started-at="2017-06-19T20:11:21Z" finished-at="2017-06-19T20:12:05Z">
       <class name="pages.LoginPage">
-        <test-method status="PASS" signature="StartBrowser()[pri:0, instance:pages.LoginPage@3e6fa38a]" name="StartBrowser" is-config="true" duration-ms="10218" started-at="2017-06-19T23:10:26Z" finished-at="2017-06-19T23:10:37Z">
+        <test-method status="PASS" signature="StartBrowser()[pri:0, instance:pages.LoginPage@4dfa3a9d]" name="StartBrowser" is-config="true" duration-ms="15262" started-at="2017-06-20T01:41:06Z" finished-at="2017-06-20T01:41:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- StartBrowser -->
-        <test-method status="PASS" signature="setData(java.lang.String, java.lang.String)[pri:0, instance:pages.LoginPage@3e6fa38a]" name="setData" duration-ms="8080" started-at="2017-06-19T23:10:39Z" data-provider="DP1" finished-at="2017-06-19T23:10:47Z">
+        <test-method status="PASS" signature="setData(java.lang.String, java.lang.String)[pri:0, instance:pages.LoginPage@4dfa3a9d]" name="setData" duration-ms="9035" started-at="2017-06-20T01:41:23Z" data-provider="DP1" finished-at="2017-06-20T01:41:32Z">
           <params>
             <param index="0">
               <value>
@@ -27,7 +27,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setData -->
-        <test-method status="PASS" signature="setData(java.lang.String, java.lang.String)[pri:0, instance:pages.LoginPage@3e6fa38a]" name="setData" duration-ms="7866" started-at="2017-06-19T23:10:47Z" data-provider="DP1" finished-at="2017-06-19T23:10:55Z">
+        <test-method status="PASS" signature="setData(java.lang.String, java.lang.String)[pri:0, instance:pages.LoginPage@4dfa3a9d]" name="setData" duration-ms="8176" started-at="2017-06-20T01:41:32Z" data-provider="DP1" finished-at="2017-06-20T01:41:40Z">
           <params>
             <param index="0">
               <value>
@@ -43,7 +43,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setData -->
-        <test-method status="PASS" signature="setData(java.lang.String, java.lang.String)[pri:0, instance:pages.LoginPage@3e6fa38a]" name="setData" duration-ms="7852" started-at="2017-06-19T23:10:55Z" data-provider="DP1" finished-at="2017-06-19T23:11:03Z">
+        <test-method status="PASS" signature="setData(java.lang.String, java.lang.String)[pri:0, instance:pages.LoginPage@4dfa3a9d]" name="setData" duration-ms="8595" started-at="2017-06-20T01:41:40Z" data-provider="DP1" finished-at="2017-06-20T01:41:49Z">
           <params>
             <param index="0">
               <value>
@@ -59,7 +59,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setData -->
-        <test-method status="PASS" signature="setData(java.lang.String, java.lang.String)[pri:0, instance:pages.LoginPage@3e6fa38a]" name="setData" duration-ms="7907" started-at="2017-06-19T23:11:03Z" data-provider="DP1" finished-at="2017-06-19T23:11:11Z">
+        <test-method status="PASS" signature="setData(java.lang.String, java.lang.String)[pri:0, instance:pages.LoginPage@4dfa3a9d]" name="setData" duration-ms="8209" started-at="2017-06-20T01:41:49Z" data-provider="DP1" finished-at="2017-06-20T01:41:57Z">
           <params>
             <param index="0">
               <value>
@@ -75,7 +75,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setData -->
-        <test-method status="PASS" signature="setData(java.lang.String, java.lang.String)[pri:0, instance:pages.LoginPage@3e6fa38a]" name="setData" duration-ms="7874" started-at="2017-06-19T23:11:11Z" data-provider="DP1" finished-at="2017-06-19T23:11:19Z">
+        <test-method status="PASS" signature="setData(java.lang.String, java.lang.String)[pri:0, instance:pages.LoginPage@4dfa3a9d]" name="setData" duration-ms="8050" started-at="2017-06-20T01:41:57Z" data-provider="DP1" finished-at="2017-06-20T01:42:05Z">
           <params>
             <param index="0">
               <value>
@@ -91,6 +91,10 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setData -->
+        <test-method status="PASS" signature="EndBrowser()[pri:0, instance:pages.LoginPage@4dfa3a9d]" name="EndBrowser" is-config="true" duration-ms="1979" started-at="2017-06-20T01:42:05Z" finished-at="2017-06-20T01:42:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EndBrowser -->
       </class> <!-- pages.LoginPage -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
