@@ -14,7 +14,7 @@ public class CreateDriver
 {
 
 	public WebDriver driver;
-	public ExtentReports r;
+	public ExtentReports report;
 	@BeforeSuite
 	public void StartBrowser()
 	{
@@ -23,7 +23,7 @@ public class CreateDriver
 		driver.get("https://sso.godaddy.com/?realm=idp&path=%2F&app=mya");
 		driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
 		driver.manage().window().maximize();
-		 r=new ExtentReports("./reports/report.html");
+		report=new ExtentReports("./reports/report.html");
 	}
 	
 	
@@ -31,7 +31,7 @@ public class CreateDriver
 	public void EndBrowser()
 	{
 		//driver.quit();
-		r.flush();
+		report.flush();
 	}
 	
 }

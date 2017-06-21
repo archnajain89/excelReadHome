@@ -38,7 +38,7 @@ public class ExcelUtility
 			    {
 			    //If it is xlsx file then create object of XSSFWorkbook class
 			    	ExcelWBook = new XSSFWorkbook(ExcelFile);
-			    	System.out.println(ExcelWBook);
+			    	//System.out.println(ExcelWBook);
 			    	System.out.println("File Extension: "+fileExtensionName);
 			    }
 
@@ -52,13 +52,11 @@ public class ExcelUtility
 			    //To get Sheet Name
 			    ExcelWSheet=ExcelWBook.getSheet(SheetName);
 			  
-			   	//Find number of rows in excel file
 			    //int rowCount = ExcelWSheet.getLastRowNum();
-			    int rowCount=(ExcelWSheet.getPhysicalNumberOfRows())-1;
-			    System.out.println("Row count: " +rowCount);
+			    int rowCount=totalRows();
 			    
-			    int colCount= ExcelWSheet.getRow(0).getLastCellNum();
-			    System.out.println("Column count: " +colCount);
+			    //Total number of columns in the cell
+			    int colCount= totalColumns();
 
 			    object1 = new Object[rowCount][colCount];
 			    
@@ -67,11 +65,11 @@ public class ExcelUtility
  						for (int j = 0; j <colCount; j++) 
  						{
  						object1[i-1][j] = ExcelWSheet.getRow(i).getCell(j).getStringCellValue();
-			    		System.out.println(object1[i-1][j]);
+			    		//System.out.println(object1[i-1][j]);
 			    	}
- 				System.out.println("i: "+i);
+ 				//System.out.println("i: "+i);
 			    }
-			    System.out.println("");
+			   // System.out.println("");
 				  
 		   }
 		   catch(Exception e)
@@ -79,6 +77,23 @@ public class ExcelUtility
 			   e.printStackTrace();
 		   }
 			return object1;
+	}
+	
+	
+	//Find number of rows in excel file
+	public static int totalRows()
+	{
+	  	int rowCount=(ExcelWSheet.getPhysicalNumberOfRows())-1;
+	    //System.out.println("Row count: " +rowCount);
+	    return rowCount;
+	}
+	
+	//Total number of columns in the cell
+	public static int totalColumns()
+	{
+	    int colCount= ExcelWSheet.getRow(0).getLastCellNum();
+	   // System.out.println("Column count: " +colCount);
+	    return colCount;
 	}
 }
 
